@@ -4,10 +4,12 @@ import com.luv2code.ecommerce.springbootecommerce.dto.Purchase;
 import com.luv2code.ecommerce.springbootecommerce.dto.PurchaseResponse;
 import com.luv2code.ecommerce.springbootecommerce.service.CheckoutService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@CrossOrigin("http://localhost:4200")
+
 @RestController
 @RequestMapping("/api/checkout")
 public class CheckoutController {

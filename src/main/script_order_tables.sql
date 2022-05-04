@@ -70,3 +70,5 @@ CREATE TABLE order_item (
                             CONSTRAINT FK_order_id FOREIGN KEY (order_id) REFERENCES orders (id),
                             CONSTRAINT FK_product_id FOREIGN KEY (product_id) REFERENCES product (id)
 ) ;
+
+ALTER TABLE customer ADD CONSTRAINT email_unique UNIQUE(email);
